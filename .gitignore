@@ -127,6 +127,7 @@ dist
 
 # Stores Visual Studio Code versions used for testing Visual Studio Code extensions
 .vscode-test
+.vscode/
 
 # pnpm
 .pnpm-store
@@ -155,3 +156,5 @@ vite.config.ts.timestamp-*
 .nx/cache
 .nx/workspace-data
 .nx/migrate-runs
+
+.angular/
