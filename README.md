@@ -3,7 +3,7 @@
 > Frontend for **Zenin Market — Fine Foods & Provisions**, a fictional supermarket.
 > A touch-friendly deli scale screen, a back office and a queue display.
 
-![Status](https://img.shields.io/badge/status-Phase%200%20(setup)-orange)
+![Status](<https://img.shields.io/badge/status-Phase%200%20(setup)-orange>)
 ![Angular](https://img.shields.io/badge/Angular-standalone%20%2B%20signals-DD0031?logo=angular&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -54,26 +54,26 @@ This repository is the **Angular app**. The backend lives in
 
 ## Routes
 
-| Route | Who | What |
-|---|---|---|
-| `/` | Scale station | Scale screens. No login: the session comes from the station's long-lived cookie. |
-| `/setup` | Office user | One-time link between a device and a scale station. |
-| `/office` | Office role | Login and back office. |
+| Route     | Who           | What                                                                             |
+| --------- | ------------- | -------------------------------------------------------------------------------- |
+| `/`       | Scale station | Scale screens. No login: the session comes from the station's long-lived cookie. |
+| `/setup`  | Office user   | One-time link between a device and a scale station.                              |
+| `/office` | Office role   | Login and back office.                                                           |
 
 ## Tech stack
 
-| Area | Choice |
-|---|---|
-| Framework | Angular 22 (standalone components) |
-| State | Signals (no NgRx) |
-| Routing | Lazy-loaded feature routes |
-| Language | TypeScript (strict) |
-| Styles | SCSS, one `.scss` per component, shared tokens in `src/styles/` (no Tailwind) |
-| UI helpers | `@angular/cdk` (dialogs, overlays, drag and drop) |
-| Barcode | `jsbarcode` draws the digits that the API computes |
-| i18n | English only for now, ready for Spanish (Transloco) |
-| API contract | Types generated from the API's OpenAPI spec |
-| Design | Touch-first. Scale screens are designed at 800×480 and scaled to fit the display. |
+| Area         | Choice                                                                            |
+| ------------ | --------------------------------------------------------------------------------- |
+| Framework    | Angular 22 (standalone components)                                                |
+| State        | Signals (no NgRx)                                                                 |
+| Routing      | Lazy-loaded feature routes                                                        |
+| Language     | TypeScript (strict)                                                               |
+| Styles       | SCSS, one `.scss` per component, shared tokens in `src/styles/` (no Tailwind)     |
+| UI helpers   | `@angular/cdk` (dialogs, overlays, drag and drop)                                 |
+| Barcode      | `jsbarcode` draws the digits that the API computes                                |
+| i18n         | English only for now, ready for Spanish (Transloco)                               |
+| API contract | Types generated from the API's OpenAPI spec                                       |
+| Design       | Touch-first. Scale screens are designed at 800×480 and scaled to fit the display. |
 
 ## Project structure (planned)
 
@@ -120,11 +120,11 @@ Open <http://localhost:4200>. The app is still an empty shell until Phase 1.
 
 ### Scripts
 
-| Command | What it does |
-|---|---|
-| `npm start` | Dev server with live reload |
+| Command         | What it does                  |
+| --------------- | ----------------------------- |
+| `npm start`     | Dev server with live reload   |
 | `npm run build` | Production build into `dist/` |
-| `npm test` | Unit tests |
+| `npm test`      | Unit tests                    |
 
 Lint and format scripts will be added in the tooling PR.
 
